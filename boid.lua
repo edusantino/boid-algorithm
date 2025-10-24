@@ -4,7 +4,7 @@ Boid.__index = Boid
 local Vector = require("vector")
 
 function Boid:new(x, y)
-    local self = setmetatable({}, Boid)
+    self = setmetatable({}, Boid)
     
     self.acceleration = Vector:new(0, 0)
     local angle = math.random(0, 2 * math.pi)
@@ -68,7 +68,7 @@ function Boid:render()
     love.graphics.translate(self.position.x, self.position.y)
     love.graphics.rotate(theta)
     
-    love.graphics.setColor(0.8, 0.4, 0.1, 1)
+    love.graphics.setColor(0.8, 0.8, 0.8, 1)
     love.graphics.polygon("fill", 
         0, -self.r*2,
         -self.r, self.r*2,

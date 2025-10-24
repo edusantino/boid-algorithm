@@ -1,10 +1,11 @@
+
 local Boid = require("boid")
 
 local Flock = require("Flock")
 local flock
 
 function love.load()
-    love.window.setMode(640, 360)
+    love.window.setMode(800, 600)
     love.graphics.setBackgroundColor(0.2, 0.2, 0.2)
     
     flock = Flock:new()
