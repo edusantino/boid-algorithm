@@ -20,8 +20,8 @@ cd flock-simulation
 
 # Run the simulation
 love .
-
-🎮 Controls
+```
+## 🎮 Controls
 Left mouse click: Add new boids to the simulation
 
 The simulation starts automatically when executed
