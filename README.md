@@ -8,7 +8,7 @@ Simulates natural swarm behavior where particles move organically on the screen 
 
 ## 🎥 Demo
 
-*Simulation in action - boids moving in organic patterns*
+https://github.com/user-attachments/assets/bc3c76ec-87ea-451e-90e7-ec363a89f8cf
 
 ## 🚀 Quick Start
 
