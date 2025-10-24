@@ -1,6 +1,6 @@
-local Boid = require("boid")
+local Boid = require("components.boid")
 
-local Flock = require("Flock")
+local Flock = require("components.flock")
 local flock
 
 local constants = require("config.constants")
