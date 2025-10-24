@@ -2,6 +2,7 @@ Boid = {}
 Boid.__index = Boid
 
 local Vector = require("vector")
+local Constants = require("config.constants")
 
 function Boid:new(x, y)
     self = setmetatable({}, Boid)

@@ -1,17 +1,19 @@
-
 local Boid = require("boid")
 
 local Flock = require("Flock")
 local flock
 
+local constants = require("config.constants")
+local config = require("config.config")
+
 function love.load()
-    love.window.setMode(800, 600)
+    love.window.setMode(config.width, config.height)
     love.graphics.setBackgroundColor(0.2, 0.2, 0.2)
     
     flock = Flock:new()
     
     local width, height = love.graphics.getDimensions()
-    for i = 1, 3 do
+    for i = 1, constants.init_flock_numbers do
         flock:addBoid(Boid:new(width/2, height/2))
     end
 end
